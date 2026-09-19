@@ -1,0 +1,8 @@
+# 友链数据，格式：
+# - name: 站点名称
+#   url: https://example.com
+#   desc: 一句话描述
+#   image: https://example.com/avatar.webp
+#   badge: 标签      # 可选
+#   remark: 备注     # 可选
+[]

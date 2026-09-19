@@ -1,0 +1,15 @@
+# 本文件只需写「要改动的配置项」，其余沿用主题默认值
+# 主题默认配置见：node_modules/hexo-theme-reimu/_config.yml
+# Hexo 会把本文件深度合并（deepMerge）到主题默认配置之上，因此嵌套项可以只覆盖子键
+
+footer:
+  since: 2026 # 版权年份显示为 2026-当前年份
+
+social:
+  github: https://github.com/seeknext
+
+# 站内搜索：主题 1.5.0+ 内置 hexo-generator-search，无需额外安装插件
+generator_search:
+  enable: true
+  field: post
+  content: true
