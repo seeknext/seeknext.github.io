@@ -4,6 +4,7 @@
 
 footer:
   since: 2026 # 版权年份显示为 2026-当前年份
+  powered: false # 关闭页脚「基于 Hexo / Theme. Reimu」署名那行
 
 social:
   github: https://github.com/seeknext
