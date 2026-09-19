@@ -43,20 +43,14 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-## 试用 one-paper 主题期间关闭 Hexo 自带高亮，改由主题内置的 highlight.js 接管。
-## 原因：Hexo 产出 <figure class="highlight"><table><td class="gutter"> 和 class="keyword" 这类
-## 类名，而 one-paper 的 CSS 只定义 .hljs-* （无 .highlight / .gutter 规则），两边对不上，
-## 代码块会渲染成无样式表格。回退到 reimu 时恢复下面四项原值即可。
-syntax_highlighter:
+syntax_highlighter: highlight.js
 highlight:
-  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -95,18 +89,14 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-## 试用 one-paper 主题期间临时排除：该页用了 reimu 专有的 {% friendsLink %} 标签，
-## one-paper 无友链功能，不排除会导致构建报 unknown block tag。
-## 回退到 reimu 时把下面两行恢复为 exclude: 即可。
-exclude:
-  - friend/**
 include:
+exclude:
 ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: one-paper
+theme: reimu
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
